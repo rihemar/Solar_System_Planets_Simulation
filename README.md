@@ -17,13 +17,8 @@ An **interactive 3D solar system exploration tool** that lets users explore and 
 ## Demo
 
 ![img](images_github/image.png)
-<!-- ![img](images_github/earth.png)
-![img](images_github/jupiter.png) -->
-<img src="images_github/earth.png" alt="Image 1" width="300" style="display: inline-block; margin-right: 10px;">
-<img src="images_github/jupiter.png" alt="Image 2" width="300" style="display: inline-block;">
+![img](images_github/jupiter.png)
 ![img](images_github/mediapipe.png)
-
-
 
 ---
 
