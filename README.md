@@ -47,4 +47,4 @@ An **interactive 3D solar system exploration tool** that lets users explore and 
 4. activate rendering page through npm
    ```bash
 	npm install 
-	npm start run dev
+	npm run start
