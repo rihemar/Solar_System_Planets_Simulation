@@ -68,3 +68,7 @@ example/dev-bundle
 build
 
 pnpm-lock.yaml
+
+
+# private 
+images_github/mediapipe2.png
