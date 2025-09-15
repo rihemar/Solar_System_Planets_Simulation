@@ -16,8 +16,10 @@ An **interactive 3D solar system exploration tool** that lets users explore and 
 
 ## Demo
 
-![Solar System Simulation Demo](path/to/demo.gif)  
-*(Add a GIF or screenshot of the simulation here)*
+![img](3DTilesRendererJS\images_github\image.png)
+![img](3DTilesRendererJS\images_github\earth.png)
+![img](3DTilesRendererJS\images_github\jupiter.png)
+
 
 ---
 
