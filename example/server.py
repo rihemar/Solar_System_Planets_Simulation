@@ -62,6 +62,8 @@ def everything():
                     cv2.circle(frame, (x, y), 3, (0, 0, 255), -1)
 
         # --- STEP 6: Display the frame ---
+        frame = cv2.resize(frame, (400, 300))
+
         cv2.imshow('Live Gesture Recognition', frame)
 
 
