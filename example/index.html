@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MAIN_FRAME</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: radial-gradient(ellipse at center, #000000 100%, #312e3b 100%);
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      max-height: 100vh;
+      overflow: hidden;
+    }
+
+    .planet-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+      gap: 2rem;
+      width: 90vw;
+      max-width: 90vw;
+      padding: 2rem;
+      list-style: none;
+    }
+
+    .planet-grid li {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background: rgba(0, 0, 0,1);
+    border-radius: 14px;
+    max-height: 25vh;
+    padding: 1rem 1.5rem;
+    aspect-ratio: 2 / 1; /* Landscape style */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden; /* Prevent content from spilling out */
+    }
+
+    .planet-grid li:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 25px rgba(255, 255, 255, 0.3);
+    }
+    .planet-grid a {
+    text-decoration: none;
+    color: rgb(145, 144, 144);
+    font-size: 0.9rem;       /* tiny text */
+    font-weight: lighter;
+    display: flex;
+    flex-direction: column;  /* vertical layout */
+    align-items: center;     /* center horizontally */
+    gap: 0.3rem;             /* small gap between image and text */
+    width: 100%;             /* take full width of parent li */
+    }
+
+ .planet-grid img {
+    max-height: 100%; /* Constrain to card height */
+    max-width: 100%;   /* Constrain width so it doesn't overflow */
+    object-fit: contain; /* Keep aspect ratio */
+    margin-right: 1rem;
+    transition: transform 0.3s ease;
+    }
+
+    .planet-grid a:hover {
+      color: #00ffff;
+    }
+  </style>
+</head>
+<body>
+  <ul class="planet-grid">
+    <li><a href="/sphereNasa?planet=earth"><img src="./images/index_pictures/earth.png" alt="Earth">Earth</a></li>
+    <li><a href="/sphereNasa?planet=saturn"><img src="./images/index_pictures/saturn.png" alt="Saturn">Saturn</a></li>
+    <li><a href="/sphereNasa?planet=jupiter"><img src="./images/index_pictures/jupiter.png" alt="Jupiter">Jupiter</a></li>
+    <li><a href="/sphereNasa?planet=moon"><img src="./images/index_pictures/moon.png" alt="Moon">Moon</a></li>
+    <li><a href="/sphereNasa?planet=mars"><img src="./images/index_pictures/mars.png" alt="Mars">Mars</a></li>
+    <li><a href="/sphereNasa?planet=venus"><img src="./images/index_pictures/venus.png" alt="Venus">Venus</a></li>
+    <li><a href="/sphereNasa?planet=neptune"><img src="./images/index_pictures/neptune.png" alt="Neptune">Neptune</a></li>
+    <li><a href="/sphereNasa?planet=uranus"><img src="./images/index_pictures/uranus.png" alt="Uranus">Uranus</a></li>
+    <li><a href="/sphereNasa?planet=sun"><img src="./images/index_pictures/sun.png" alt="Sun">Sun</a></li>
+  </ul>
+
+  <script type="module" src="index.js"></script>
+</body>
+</html>
